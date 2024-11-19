@@ -1,8 +1,6 @@
-##default technical scoreboard
-scoreboard objectives add eden.technical dummy
-
 ##additional Scoreboards
 scoreboard objectives add sit trigger {"text": "Sit"}
+scoreboard objectives add sitting_players.technical dummy
 
 ##init schedules
-schedule function sitting_players:trigger/run 5t
+schedule function sitting_players:run 5t
